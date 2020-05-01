@@ -31,17 +31,17 @@ def q1():
         scoreAdd()
         
     else:
-        print("Sorry. Answer is b")
+        print("Sorry. Answer is b: purple is purple")
         scoreBoo()
         
     q2()
         
 def q2():
     global score
-    print("1. what is an animal?")
+    print("1. which is an animal?")
     print("a. flower")
-    print("b. fish")
-    print("c. ant")
+    print("b. door")
+    print("c. bug")
     print("d. dog\n")
 
     answer = str(input("Answer: "))
@@ -62,19 +62,17 @@ def q3():
     print("a. napkin")
     print("b. couch")
     print("c. number")
-    print("d. nothing\n")
+    print("d. tree\n")
 
     answer = str(input("Answer: "))
     time.sleep(1)
     if answer == "c":
         print("Yay! That's right! 5 is a number!")
-        scoreAdd()
-        
+        scoreAdd()        
         
     else:
         print("No, 5 is a number. Answer is c\n")
-        scoreBoo()
-        
+        scoreBoo()       
         
     time.sleep(1)
     print("Thank you for playing, "+name)
