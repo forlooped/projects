@@ -1,14 +1,21 @@
 #!/bin/bash
 
-x=5
+echo
+# Welcome your player :)
+echo "Hi there! What is your name?"
+read name
+echo
+echo "Welcome to the game, $name!"
 
+# Choose the number for players to guess
+x=5
 echo
 
+# function to run game
 rerun () {
-        echo
+echo
 echo "Guess the number: "
 read y
-
 echo
 
 if [ "$x" -ne "$y" ]
@@ -19,7 +26,6 @@ else
 fi
 
 echo
-
 echo "Do you want to play again? (yes or no)"
 read answer
 
@@ -30,11 +36,10 @@ then
         rerun
 else
         echo
-        echo "OK, Thanks for playing!"
+        echo "OK, Thanks for playing, $name!"
         echo
         exit 1
 fi
-
 }
 
 rerun
