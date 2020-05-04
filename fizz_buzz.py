@@ -5,12 +5,11 @@
 
 class whoa:
     def checking(self):
-        three = range(0, 100, 3)
-        five = range(0, 100, 5)
-        both = three and five
+        three = range(0, 101, 3)
+        five = range(0, 101, 5)
 
-        for i in range(1, 100):
-            if i in both:
+        for i in range(1, 101):
+            if i in three and i in five:
                 print("FizzBuzz")
             else:
                 if i in three:
@@ -22,3 +21,4 @@ class whoa:
                         print(i)
 final = whoa()
 final.checking()
+
